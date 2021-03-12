@@ -112,6 +112,16 @@ form>div>input{
         background-image: linear-gradient(black,transparent,black);
         height: 100%;
     }
+    .formulario{
+        display: contents;
+    }
+    .btnVamos{
+        border-radius: 3%;
+        width: 100px;
+    }
+    form>div>input{
+        width: 100%;
+    }
 }
 @media (min-width: 481px) and (max-width: 1200px) {
     .fundo{
@@ -121,6 +131,16 @@ form>div>input{
         background-image: linear-gradient(black,transparent,black);
         height: 100%;
     }
+    .formulario{
+        display: contents;
+    }
+    .btnVamos{
+        border-radius: 3%;
+        width: 100px;
+    }
+    form>div>input{
+        width: 100%;
+    }
 }
 @media (min-width: 1200px) {
     .fundo{
@@ -129,5 +149,8 @@ form>div>input{
     .fundo>div{
         background-image: linear-gradient(black,transparent,black);
         height: 100%;
+    }
+    .corpo>div{
+        padding: 75px 275px;
     }
 }
