@@ -17,6 +17,7 @@ form{
 }
 form>h3{
     font-size: 1.2rem;
+    margin: 1rem 0;
 }
 form>div>input{
     width: 80%;
@@ -91,13 +92,15 @@ form>div>input{
     padding: 0px 45px;
 }
 .corpo>div{
-    padding: 75px 45px;
+    padding: 75px 30px;
 }
 .corpo>div>h1{
     font-size: 3.125rem;
+    margin: 1rem 0;
 }
 .corpo>div>h2{
     font-size: 1.625rem;
+    margin: 1rem 0;
 }
 .fundo {
     width: 100%;
@@ -122,6 +125,15 @@ form>div>input{
     form>div>input{
         width: 100%;
     }
+    .corpo>div>h1{
+        font-size: 1.75rem;
+    }
+    .corpo>div>h2{
+        font-size: 1.125rem;
+    }
+    form>h3{
+        font-size: 18px;
+    }
 }
 @media (min-width: 481px) and (max-width: 1200px) {
     .fundo{
@@ -140,6 +152,9 @@ form>div>input{
     }
     form>div>input{
         width: 100%;
+    }
+    .corpo>div{
+        padding: 75px 150px;
     }
 }
 @media (min-width: 1200px) {
