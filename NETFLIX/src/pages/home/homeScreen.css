@@ -8,9 +8,7 @@
   
   html,
   body,
-  #root {
-    height: 100%;
-  }
+
 
 form{
     text-align: -webkit-center;
@@ -39,6 +37,10 @@ form>div>input{
     display: flex;
     align-items: center;
 }
+.cabecalho>img{
+    width: 122px;
+    height: 160%;
+}
 .cDireita{
     margin-left: auto;
     display: flex;
@@ -58,16 +60,19 @@ form>div>input{
     padding: 10px;
 }
 .btnEntrar{
-    background-color: red;
-    width: 60px;
+    background-color:#e50914;
+    width: 85px;
+    height: 35px;
     color: white;
     text-align: center;
     font-family: Helvetica,Arial,sans-serif;
+    border: none;
     border-radius: 3px;
-    font-weight: 400;
+    box-shadow: none;
     font-size: 1rem;
     margin-right: 35px;
     padding: 8px;
+    cursor: pointer;
 }
 .btnVamos{
     background-color: red;
@@ -107,6 +112,15 @@ form>div>input{
     height: 100%;
     background-size: cover;
     background-position: center;
+    z-index: -999;
+    position: absolute;
+}
+.fundo>div:first-child{
+    position: absolute;
+    background-image: linear-gradient(black,transparent,black);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 .formulario{
     display: flex;
@@ -116,12 +130,7 @@ form>div>input{
 }
 @media (max-width: 400px) {
     .fundo{
-        background-image: url(SmallBackground.jpg);
-        position: absolute;
-    }
-    .fundo>div{
-        background-image: linear-gradient(black,transparent,black);
-        height: 100%;
+        background-image: url(../../img/SmallBackground.jpg);
     }
     .cabecalho{
         margin-left: 10px;
@@ -191,13 +200,9 @@ form>div>input{
 }
 @media (min-width: 401px) and (max-width: 1023px) {
     .fundo{
-        background-image: url(SmallBackground.jpg);
-        position: absolute;
+        background-image: url(../../img/SmallBackground.jpg);
     }
-    .fundo>div{
-        background-image: linear-gradient(black,transparent,black);
-        height: 100%;
-    }
+
     .cabecalho{
         margin-left: 10px;
         margin-right: -20px;
@@ -254,11 +259,7 @@ form>div>input{
 
 @media (min-width: 481px) and (max-width: 961px) {
     .fundo{
-        background-image: url(MediumBackground.jpg);
-    }
-    .fundo>div{
-        background-image: linear-gradient(black,transparent,black);
-        height: 100%;
+        background-image: url(../../img/MediumBackground.jpg);
     }
     .formulario{
         display: contents;
@@ -286,11 +287,7 @@ form>div>input{
 }
 @media (min-width: 962px) and (max-width: 1023px) {
     .fundo{
-        background-image: url(LargeBackground.jpg);
-    }
-    .fundo>div{
-        background-image: linear-gradient(black,transparent,black);
-        height: 100%;
+        background-image: url(../../img/LargeBackground.jpg);
     }
     .formulario{
         display: contents;
@@ -318,11 +315,7 @@ form>div>input{
 }
 @media (min-width: 1024px) {
     .fundo{
-        background-image: url(LargeBackground.jpg);
-    }
-    .fundo>div{
-        background-image: linear-gradient(black,transparent,black);
-        height: 100%;
+        background-image: url(../../img/LargeBackground.jpg);
     }
     .btnVamos{
         border-radius: 3%;
